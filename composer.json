@@ -1,0 +1,37 @@
+{
+    "name": "jdecool/crontab-parser",
+    "description": "Parse crontab",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jérémy DECOOL",
+            "email": "contact@jdecool.fr"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "dragonmantank/cron-expression": "^3.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.41",
+        "friendsofphp/php-cs-fixer": "^3.46",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "JDecool\\CrontabParser\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JDecool\\CrontabParser\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
+    }
+}
